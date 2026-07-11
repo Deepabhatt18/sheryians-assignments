@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background:rgb(239, 158, 7);
+}
+.product{
+    width: 50%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background:whitesmoke;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+} 
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+#center-nav{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#center-nav a{
+    color: black;
+    text-decoration: none;
+}
+#right-nav{
+    display: flex;
+    gap: 50px;
+}
+#right-nav img{
+    width: 50px;
+    height: 50px;
+}
+.center{
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.left-con , .right-con{
+    width: 400px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 10px gray;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.left-con h1 , .left-con p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.left-con span{
+    color: orangered;
+}
+#discription{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+#pera{
+    display: flex;  
+    justify-content: flex-start;
+    gap: 250px;
+    box-shadow: 0 0 10px gray;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#pera img{
+      margin-top: 20px;
+      width: 15px;
+      height: 15px;
+}
+#option{
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    box-shadow: 0 0 10px gray;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#icon img{
+    width: 30px;
+}
+#icon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    box-shadow: 0 0 10px gray;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#icon1 img{
+    width: 30px;
+}
+.center-con{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.product-img{
+    display: flex;
+    flex-direction: column;
+}
+.center-img{
+    height: auto;
+    display: flex;
+    justify-content:center ;
+
+} 
+.center-img img{
+    width: 700px;
+}
+.product-info{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+.img{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    gap: 30px;
+}
+.img img{
+    height: 50px;
+    width: 50px;
+}
+.right-con{
+    display: flex;
+    align-items: center;
+}
+
+#size{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#size div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px gray;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#color{
+    background-color: rgb(235, 92, 41);
+}
+.right-con #btn{
+    margin: 30px;
+    width: 100px;
+    justify-content: center;
+    margin-top: 20px;
+    box-shadow: 0 0 10px gray;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#product-color{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+#product-color h1{
+     padding-bottom: 30px;
+}
+.pro-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.pro-img .img{
+   display: flex;
+   flex-direction: column;
+}
+.pro-img img{
+     margin: 20px;
+     width: 100px;
+     height: 100px;
+}
+.pro-img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.pro-img1 .img{
+   display: flex;
+   flex-direction: column;
+}
+.pro-img1 img{
+     margin: 20px;
+     width: 100px;
+     height: 100px;
+}
+ #add-to-cart{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;  
+    margin-top: 20px;  
+}
+#favorite{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#favorite img{
+    height: 30px;
+    width: 30px;
+}
+
+#add-to-cart button{
+    width: 200px;
+    height: 50px;
+    border: 1px solid gray;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#add-to-beg {
+     display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#add-to-beg img{
+    height: 30px;
+    width: 30px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+footer{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.product-info1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    border: 1px solid rgb(201, 197, 197);
+    border-radius: 10px;
+    
+}
+.info{
+    width: 400px;
+    height: 200px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.info img{
+    width: 300px;
+    height: 150px;
+     border: 2px solid rgb(127, 124, 124); 
+    border-radius: 20px;
+}
+.about{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.about p{
+    letter-spacing: 1px;
+    width: 300px;
+    margin-top: 30px;
+}
+.extra-info{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    border: 1px solid rgb(201, 197, 197);
+    border-radius: 10px;
+    margin: 30px;
+}
+.ex-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.ex-info img{
+    width: 100px;
+    border: 1px solid rgb(201, 197, 197);
+    border-radius: 10px;
+}
+.ex-pera{
+    display: flex;
+    flex-direction: column;
+}
