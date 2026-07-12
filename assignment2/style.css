@@ -1,9 +1,9 @@
 *{
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    
 }
-body{
+body,html{
     display: flex;
     justify-content: center;
     height: 100%;
@@ -13,34 +13,33 @@ body{
 }
 .product{
     width: 50%;
-    height: 100%;
+    height: fit-content;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background:whitesmoke;
-    border: 1px solid gray;
-    border-radius: 20px;
+    border-radius:20px ;
 }
 header{
-    width: 100%;
+    width: 90%;
     height: 100px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 30px;
     
 } 
 nav{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border: 1px solid gray;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding-top: 20px;
+   
 }
 #center-nav{
     display: flex;
+    font-size: 20px;
     justify-content: center;
     gap: 50px;
 }
@@ -50,6 +49,8 @@ nav{
 }
 #right-nav{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 #right-nav img{
@@ -57,24 +58,25 @@ nav{
     height: 50px;
 }
 .center{
-    margin: 20px;
+    margin: 100px 20px;
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-around;
-    
+
 }
 .left-con , .right-con{
-    width: 400px;
-    height: 700px;
+    width: 350px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     box-shadow: 0 0 10px gray;
     border: 1px solid white;
     border-radius: 10px;
 }
 .left-con h1 , .left-con p{
+    width: 300px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -82,6 +84,11 @@ nav{
     color: orangered;
 }
 #discription{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
     margin-top: 20px;
     margin-bottom: 30px;
     letter-spacing: 2px;
@@ -89,7 +96,7 @@ nav{
 #pera{
     display: flex;  
     justify-content: flex-start;
-    gap: 250px;
+    gap: 20px;
     box-shadow: 0 0 10px gray;
     border: 1px solid white;
     border-radius: 10px;
@@ -100,7 +107,7 @@ nav{
       height: 15px;
 }
 #option{
-    width: 500px;
+    width: 300px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -108,29 +115,39 @@ nav{
 }
 #icon{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 120px;
-    box-shadow: 0 0 10px gray;
-    border: 1px solid white;
-    border-radius: 10px;
-}
-#icon img{
-    width: 30px;
-}
-#icon1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     gap: 90px;
     box-shadow: 0 0 10px gray;
     border: 1px solid white;
     border-radius: 10px;
 }
+#icon p{
+    height: 30px;
+}
+#icon img{
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+#icon1{
+    display: flex;
+    justify-content: flex-start;
+    gap: 90px;
+    box-shadow: 0 0 10px gray;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#icon1 p{
+    height: 30px;
+}
 #icon1 img{
     width: 30px;
+    height: 30px;
+    margin-top: 10px;
 }
 .center-con{
+    width: 33%;
+    height: 700px;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -251,7 +268,11 @@ nav{
     height: 30px;
     width: 30px;
 }
-
+#add-to-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #add-to-cart button{
     width: 200px;
     height: 50px;
@@ -271,57 +292,61 @@ nav{
     height: 30px;
     width: 30px;
 }
+.content{
+    display: flex;
+    justify-content: center;
+    
+}
 .footer{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
 }
 footer{
-
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 .product-info1{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 100px;
     margin-top: 50px;
     border: 1px solid rgb(201, 197, 197);
     border-radius: 10px;
     
 }
 .info{
-    width: 400px;
+    width: 25%;
     height: 200px;
     display:flex ;
     justify-content: center;
     align-items: center;
 }
 .info img{
-    width: 300px;
-    height: 150px;
-     border: 2px solid rgb(127, 124, 124); 
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(127, 124, 124); 
     border-radius: 20px;
 }
 .about{
-    width: 700px;
     display: flex;
+
     flex-direction: column;
     padding-left: 10px;
 }
 .about p{
-    letter-spacing: 1px;
-    width: 300px;
+    letter-spacing: 0.5px;
+    width: 150px;
     margin-top: 30px;
 }
 .extra-info{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 80px;
     margin-top: 50px;
     border: 1px solid rgb(201, 197, 197);
     border-radius: 10px;
@@ -336,7 +361,7 @@ footer{
     margin-bottom: 20px;
 }
 .ex-info img{
-    width: 100px;
+    width: 80px;
     border: 1px solid rgb(201, 197, 197);
     border-radius: 10px;
 }
