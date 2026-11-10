@@ -1,0 +1,187 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.parent{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    display: flex;
+    gap: 50px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.image{
+    display: flex;
+    gap: 30px;
+}
+.image img{
+    width: 30px;
+}
+
+.center-area {
+    
+    max-width: 1100px;
+    object-fit: contain;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 55px);
+    gap: 10px;
+
+    grid-template-areas:
+        "flower1    flower1    heading   heading   heading   heading   heading   heading   heading   flower2  flower2"
+        ".          .          heading   heading   heading   heading   heading   heading   heading   .        ."
+        "collection collection .         .         .         .         .         .         .         explore  explore"
+        "collection collection img2      img2      img4      img4      img4      img5      img5      explore  explore"
+        "img1       img1       img2      img2      img4      img4      img4      img5      img5      img7     img7"
+        "img1       img1       img3      img3      img4      img4      img4      img5      img5      img7     img7"
+        "img1       img1       img3      img3      img4      img4      img4      img6      img6      img7     img7"
+        "img1       img1       img3      img3      img4      img4      img4      img6      img6      img7     img7"
+        "quote      quote      quote     quote     img4      img4      img4      .         .         year     year"
+        "quote      quote      quote     quote     .         .         .         article   article   article  article"
+        "signature  signature  signature signature scroll    scroll    scroll    article   article   article  article";
+}
+.flower1    { grid-area: flower1; }
+.heading{ 
+    font-size: 25px;
+    text-align: center;
+    grid-area: heading; 
+}
+.flower2    { grid-area: flower2; }
+.collection { grid-area: collection; }
+.explore {
+    grid-area: explore;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+}
+
+.circle-text {
+    width: 100%;
+    height: 100%;
+}
+.circle-text text {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    fill: #000;
+}
+
+.play {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+.img1{
+    
+     grid-area: img1; 
+}
+.img2{
+     grid-area: img2; 
+}
+.img3{
+    object-fit: cover;
+    grid-area: img3;
+     }
+.img4 {
+    position: relative;
+    grid-area: img4;
+    background: #e8c85a;      
+    border-radius: 24px;
+    overflow: visible;        
+}
+.img4 img {
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;      
+    object-position: top;
+}
+.star {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 44px;
+    line-height: 1;
+    z-index: 2;
+}
+.img5{
+    
+    grid-area: img5; }
+.img6{
+     grid-area: img6; }
+.img7{
+     grid-area: img7; }
+.year{ grid-area: year; }
+.quote{ 
+    font-family: cursive;
+    grid-area: quote; }
+.signature{
+     grid-area: signature;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+.signature h2 {
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 56px;
+    font-weight: 400;
+    display: inline-block;
+    
+    background: linear-gradient(transparent 70%, #ffd740 70%);
+}
+.scroll{ grid-area: scroll; }
+.article{ 
+    grid-area: article;
+    display: flex;
+ }
+ .article h1{
+    font-size: 50px;
+ }
+ .article span{
+    font-size: 15px;
+ }
+ .article button{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+ }
+.img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+    overflow: hidden;
+    border-radius: 18px;
+}
+.center-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

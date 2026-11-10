@@ -1,0 +1,230 @@
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body { background-color: white; }
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.outer-area{
+width: 100%; 
+max-width: 1600px;
+min-height: 100vh;
+padding: 30px; 
+display: flex;
+align-items: center;
+justify-content: center;
+gap:50px;
+/* height: 100%;
+width: 100%; */
+
+}
+.nav {
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* new */
+    gap: 70px;
+}
+
+.nav a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    white-space: nowrap; /* new */
+    transform: rotate(-90deg);
+}
+#left-area{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 35%;
+   /* height: 100%; */
+}
+#left-content{
+    display: flex;
+    flex-direction: column;
+    gap:10px; /* new */
+}
+#about{
+    display: flex;
+    align-items: center;  /* new */
+    margin-bottom: 5px;  /* new */
+    gap: 10px;
+}
+#about img{
+    height: 35px;
+    width: 35px;
+    object-fit: contain; /* new */
+}
+.left{
+   background-color: palevioletred;
+   width: 100%;
+   height: 100%;
+   border-radius: 12px;
+/* new */
+   min-height: 550px;
+   overflow: hidden;
+   display: flex;
+    flex-direction: column; 
+   align-items: center; 
+   justify-content: space-between;
+
+}
+/* new */
+.left  img {
+    width: 85%; 
+    height: 330px; 
+    object-fit: contain;
+    object-position: center;
+ }
+/* #left-center {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+#left-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 25px;
+   color: white;
+}
+/* new */
+#left-bottom h1 {
+    font-size: clamp(30px, 4vw, 55px);
+    line-height: 1.1; 
+}
+#left-bottom #email {
+   padding-top: 20px;
+   /* new */
+   font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+#right-area {
+    width: 50%;
+    min-height: 600px; /* new */
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+        "box1 box1 box1"
+        "box2 box2 box3"
+        "box2 box2 box4"
+        "box5 box6 box7";
+}
+/* new */
+#right-area  div {
+    min-width: 0; 
+    min-height: 0; 
+    border-radius: 10px;
+    overflow: hidden; 
+}
+.box1{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+   grid-area: box1;
+
+}
+.box1 h1{
+    font-size: clamp(40px, 6vw, 85px);
+     padding: 10px;
+   
+}
+.box2{
+    grid-area: box2;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgElEYOoLC2imiQI8hvrBHW_PshtJKbwWtG6_Lv2ym6_Y87yvJcKixTLrk&s=10');
+    background-size: cover;
+    /* new */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box3{
+     grid-area: box3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    background-color:skyblue ;
+}
+.box4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    grid-area: box4;
+    background-color:rgb(159, 62, 159);
+}
+.box5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    grid-area: box5;
+    background-color: gray;
+}
+.box5 img{
+    width: 50px;
+    height: 40px;
+    object-fit: contain;
+}
+.box6{
+    border-radius: 10px;
+    grid-area: box6;
+    background-color: black;
+}
+.box6 img{
+    width: 80px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.box7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    grid-area: box7;
+    background-color: rgb(199, 144, 42);
+}
+
+ @media screen and (max-width: 1024px) { 
+    .outer-area { 
+        flex-direction: column;
+        padding: 25px; gap: 25px;
+   }
+    .nav { width: 100%; } 
+    .nav nav {
+      width: 100%; 
+     flex-direction: row; 
+     justify-content: center; flex-wrap: wrap; gap: 30px; } .nav a { transform: none; font-size: 15px; } /* Left area */ #left-area { width: 80%; max-width: 550px; } .left { min-height: 550px; } #left-bottom h1 { font-size: 50px; } /* Right grid */ #right-area { width: 100%; max-width: 800px; min-height: 650px; } .box1 h1 { font-size: 65px; } } /* ========================= 7. MOBILE RESPONSIVENESS 600px and below ========================= */ @media screen and (max-width: 600px) { .outer-area { padding: 15px; gap: 20px; } /* Navigation */ .nav nav { gap: 15px; } .nav a { font-size: 12px; } /* Profile area */ #left-area { width: 100%; } .left { min-height: 450px; } .left > img { height: 260px; width: 90%; } #left-bottom { padding: 10px 20px 20px; } #left-bottom h1 { font-size: 38px; } #left-bottom #email { font-size: 11px; } /* Portfolio heading */ #right-area { width: 100%; min-height: auto; grid-template-columns: repeat(2, 1fr); grid-template-rows: 100px 250px 120px 120px 120px; grid-template-areas: "box1 box1" "box2 box2" "box3 box4" "box5 box6" "box7 box7"; } .box1 h1 { font-size: 45px; } .box3 h1, .box4 h1, .box7 h3 { font-size: 25px; } .box3 p, .box4 p, .box5 p, .box7 p { font-size: 12px; text-align: center; } .box5 img { width: 40px; height: 35px; } .box6 img { width: 65px; height: 60px; } } /* ========================= 8. SMALL MOBILE 400px and below ========================= */ @media screen and (max-width: 400px) { .outer-area { padding: 10px; } .nav nav { gap: 10px; } .nav a { font-size: 10px; } .left { min-height: 400px; } .left > img { height: 220px; } #left-bottom h1 { font-size: 32px; } #right-area { gap: 7px; grid-template-rows: 80px 200px 100px 100px 100px; } .box1 h1 { font-size: 35px; } }
